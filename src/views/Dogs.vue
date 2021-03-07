@@ -1,6 +1,7 @@
 <template>
   <div>
-  <b-table striped hover :items="dogs" />
+    <h1>Dogs For Sale</h1>
+    <b-table striped hover :items="dogs" />
   </div>
 </template>
 
