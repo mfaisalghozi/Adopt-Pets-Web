@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h1>{{animal.name}} is a {{$route.params.species}}</h1>
-    <p>{{animal.age}} Years Old</p>
-    <p>Breed is {{animal.breed}}</p>
+    <h1>{{ animal.name }} is a {{ $route.params.species }}</h1>
+    <p>{{ animal.age }} Years Old</p>
+    <p>Breed is {{ animal.breed }}</p>
   </div>
 </template>
 
@@ -15,10 +15,7 @@ export default {
     }
   },
   computed: {
-    ...mapState([
-      'cats',
-      'dogs'
-    ])
+    ...mapState(['cats', 'dogs'])
   },
   mounted () {
     // this.cats

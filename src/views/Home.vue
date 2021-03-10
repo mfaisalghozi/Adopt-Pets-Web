@@ -3,7 +3,7 @@
     <h1>Adopt a new best friend.</h1>
     <button class="btn btn-primary" @click="togglePetForm">Add New Pet</button>
 
-    <b-form @submit="handleSubmit" v-if="showPetForm">
+    <b-form @submit.prevent="handleSubmit" v-if="showPetForm">
       <b-form-group id="input-group-2" label="Pets Name:" label-for="input-2">
         <b-form-input
           id="input-2"
@@ -68,7 +68,7 @@ export default {
           age
         }
       }
-      this.addPe(payload)
+      this.addPet(payload)
     }
   }
 }
